@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form</title>
+</head>
+
+
+<body>
+
+<div class="wrap">
+	<caption>Form</caption>>
+	<table>
+		<thead>
+			<tr>
+				<td>
+					
+				</td>
+			</tr>	
+		</thead>
+	</table>
+</div>
+	
+</body>
+</html>

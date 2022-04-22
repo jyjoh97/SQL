@@ -18,3 +18,13 @@
 2022-04-21 14:39:15,201 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2022-04-21 14:45:40,813 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2022-04-21 16:23:02,273 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-04-22 13:39:02,938 [Worker-10: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-04-22 14:07:04,748 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-04-22 16:59:46,314 [main] INFO  org.eclipse.jetty.server.Server - jetty-10.0.6; built: 2021-06-29T15:28:56.259Z; git: 37e7731b4b142a882d73974ff3bec78d621bd674; jvm 17.0.2+8
+2022-04-22 16:59:46,333 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2022-04-22 16:59:46,354 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5d9625e5{/wse,null,AVAILABLE}
+2022-04-22 16:59:46,371 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@cf9cfdc{HTTP/1.1, (http/1.1)}{0.0.0.0:57445}
+2022-04-22 16:59:46,405 [main] INFO  org.eclipse.jetty.server.Server - Started Server@5d76342{STARTING}[10.0.6,sto=0] @10367983ms
+2022-04-22 17:07:22,786 [Framework stop - Equinox Container: df3c0c48-e554-4918-895b-41b5408999eb] INFO  org.eclipse.jetty.server.Server - Stopped Server@5d76342{STOPPING}[10.0.6,sto=0]
+2022-04-22 17:07:22,788 [Framework stop - Equinox Container: df3c0c48-e554-4918-895b-41b5408999eb] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@cf9cfdc{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+2022-04-22 17:07:22,798 [Framework stop - Equinox Container: df3c0c48-e554-4918-895b-41b5408999eb] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5d9625e5{/wse,null,STOPPED}

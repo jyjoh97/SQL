@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+
+	<div class="panel-heading">
+		<h2>Form</h2>
+	</div>
+
+<div class="panle-body">
+	<form method="post" action="form1.jsp" name="frm1">
+	<fieldset>
+		<legend>폼의 데이터 전송실습</legend>
+		<table>
+			<tbody>
+				<tr>
+					<th>
+						<label for = "text">이름 : </label>
+					</th>
+					<td>
+						<input type="text" name="name" id="name" required>
+					</td>
+					</tr>
+				<tr>
+					<th>
+						<label for = "password">비밀번호 : </label>
+					</th>		
+					<td>
+						<input type="password" name="pw" id="pw"required>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for = "text">아이디 : </label>
+					</th>
+					<td>
+						<input type="text" name="id" id="id" required>
+					</td>
+				</tr>	
+				<tr>
+					<th>
+						<label for = "text">주소 : </label>
+					</th>
+					<td>
+						<input type="text" name="add" id="add" required>
+					</td>
+				</tr>	
+				<tr>
+				<th>
+					<label for = "text">주문수량 : </label>
+				</th>
+				<td>
+					<input type="text" name="" required>
+				</td>
+				</tr>
+				<tr>
+					<th>
+						<label for = "email">E-Mail : </label>
+					</th>
+					<td>
+						<input type="email" name="email" id="email" required>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for = "url">URL : </label>
+					</th>
+					<td>
+						<input type="url" name="url" id="url"required>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						날짜 :
+					</th>
+					<td>
+					 	<input type = "date">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for = "comment">Comment : </label>
+					</th>
+					<td>
+						<textarea cols="50" row="10" name="comment" id="comment">
+						</textarea>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for = "baseball">야구팀 : </label>
+					</th>
+					<td>
+						<input type="radio" name ="baseball" id="baseball1" value="두산" checked>두산<br>
+						<input type="radio" name ="baseball" id="baseball2" value="NC" checked>NC<br>
+						<input type="radio" name ="baseball" id="baseball3" value="LG" checked>LG<br>
+						<input type="radio" name ="baseball" id="baseball4" value="SK" checked>SK<br>
+						<input type="radio" name ="baseball" id="baseball5" value="KIA" checked>KIA<br>
+						<input type="radio" name ="baseball" id="baseball6" value="SAMUNG" checked>SAMSUNG
+					</td>
+					</tr>	
+				<tr>
+					<th>
+						<label for="favorite">4강팀 : </label>
+					</th>
+					<td>
+						<input type="checkbox">두산<br>
+						<input type="checkbox">NC<br>
+						<input type="checkbox">LG<br>
+						<input type="checkbox">SK<br>
+						<input type="checkbox">KIA<br>
+						<input type="checkbox">SAMSUNG
+				</tr>
+				<tr>
+					<th>
+						<label for="victory">우승팀 : </label>
+					</th>
+					<td>
+						<select name="victory" multiple size="7" id="victory">
+							<option value="">선택안함</option>
+							<option value="두산">두산</option>
+							<option value="NC">NC</option>
+							<option value="LG">LG</option>
+							<option value="SK">SK</option>
+							<option value="KIA">KIA</option>
+							<option value="SAMSUNG">SAMSUNG</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="victory">파일 : </label>
+					</th>
+					<td>
+						<input type="file">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" value="전송"> &nbsp; &nbsp; &nbsp; 
+						<input type="reset" value="리셋"> &nbsp; &nbsp; &nbsp; 
+						<input type="button" value="none">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</fieldset>
+	</form>
+</div>
+
+</body>
+</html>

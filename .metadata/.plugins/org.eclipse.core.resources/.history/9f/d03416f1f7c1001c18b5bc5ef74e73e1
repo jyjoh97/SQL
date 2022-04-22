@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+</head>
+
+
+<body>
+
+<div class="wrap">
+	<h2>FOrm</h2>
+		<table>
+			<ul>
+				<li><input type="text"></li>
+				<li><input type="text"></li>
+				<li><input type="password"></li>
+				<li><input type="text"></li>
+			</ul>
+		</table>
+</div>
+	
+</body>
+</html>
