@@ -17,20 +17,19 @@
 			{"sub5.html#page1","sub5.html#page2","sub5.html#page3","sub5.html#page4","sub5.html#page5"}};
 %>
 <%-- <%=표현식(expression) %> --%>
-<a class="Logo" href="index.jsp"><img src="./image/NC.png" alt="로고">
-<i class="xi-star-o xi-spin"></i></a>
-<nav id="gnb">
-	<ul>
+<a class="Logo" href="index.jsp"><img src="./image/NC.png" alt="로고"></a>
+<nav id="gnb" class="navbar navbar-default">
+	<ul class="nav navbar-nav">
 <%
 	for(int i=0;i<dp1.length;i++){
 %>
-	<li>
+	<li class="dropdown">
 		<span class="dp1"><%=dp1[i] %></span>
 		<ul class="sub">
 <%
 		for(int j=0;j<dp2[i].length;j++){
 %>
-<li><a class="dp2" href="<%=lnk[i][j] %>"><%=dp2[i][j] %></a></li>
+			<li><a class="dp2" href="<%=lnk[i][j] %>"><%=dp2[i][j] %></a></li>
 <%
 		}
 %>
@@ -59,7 +58,6 @@
 <%
 	}
 %>
-	<a href="">사이트맵</a>
+	<a href="">고객센터</a>
 	<a href="memberList.jsp">회원목록</a>
-	<a href="">오시는길</a>
 </p>

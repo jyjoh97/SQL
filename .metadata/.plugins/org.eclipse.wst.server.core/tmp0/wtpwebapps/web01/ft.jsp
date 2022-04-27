@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%    
-    String[] dp3 = {"사이트맵","Contact US","회원약관","개인정보처리방침","보안신고센터","협력사"};
+    String[] dp3 = {"고객센터","클린신고센터","견학신청","사이트맵","개인정보처리방침","정보보호현황", "오시는길" };
 %>
 <div class="ft_wrap">
 <%

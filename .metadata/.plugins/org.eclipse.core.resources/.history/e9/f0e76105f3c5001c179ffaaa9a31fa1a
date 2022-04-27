@@ -1,0 +1,79 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원 가입 폼</title>
+
+</head>
+
+<body>
+<div class="wrap">
+	<header id="hd" class="panel-heading">
+		<div class="hd_wrap">
+			<%@ include file="nav.jsp" %>
+		</div>		
+	</header>
+	<div class="content" class="panel_body">
+		<h2>회원가입</h2>
+
+<script>
+	function openIdchk(){
+		window..name="parentForm";
+		window.open("member/IdCheckForm.jsp", "chkForm", "width=500, height=300, resizable=no, scrollbars=no");
+	}
+</script>
+		
+	
+		<form action="joinPro.jsp" method="post">
+			<table class="table">
+				<tbody>
+					<tr>
+						<td class="necessary">아이디 : </td>
+						<td><input type="text" name="uid" id="uid" onkeydown="inputIdChk()" required >
+							<input type="button" id="popopen" value="아이디 중복확인" onclick="openIdChk()">
+							<input type="hidden" name="idck" id="idck" value="">
+						</td>
+					</tr>
+					<tr>
+						<td class="necessary">비밀번호 : </td>
+						<td><input type="password" name="upw" id="upw" required></td>
+					</tr>
+					<tr>
+						<td class="necessary">비밀번호 확인 : </td>
+						<td><input type="password" name="upw2" id="upw2" required></td>
+					</tr>			
+					<tr>
+						<td class="necessary">이름 : </td>
+						<td><input type="text" name="name" id="name" required></td>
+					</tr>
+					<tr>
+						<td class="">성별 : </td>
+						<td><input type="radio" name="gender" value="남" checked>남
+							<input type="radio" name="gender" value="여" checked>여
+						</td>
+					</tr>	
+					<tr>
+						<td class="">연락처 : </td>
+						<td><input type="tel" name="phone" id="phone"></td>
+					</tr>
+					<tr>
+						<td class="">이메일 : </td>
+						<td><input type="email" name="eamil" id="eamil"></td>	
+					</tr>	
+					<tr>
+						<td class="">주소 : </td>
+						<td><input type="text" name="address" id="address"></td>
+				</tbody>
+			</table>
+			<br>
+			<input type="submit" value="가입"/> <input type="button" value="취소">
+		</form>
+	</div>	
+	<footer id="ft">
+			<%@ include file="ft.jsp" %>
+		</footer>
+</div>
+</body>
+</html>
