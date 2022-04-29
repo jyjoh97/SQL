@@ -39,7 +39,6 @@
 		<tbody>
 			<tr>
 				<th>이름 :</th>
-				<td><%=name %></td>
 			</tr>
 			<tr>
 				<th>아이디 :</th>

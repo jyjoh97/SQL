@@ -26,5 +26,5 @@
             </li>
 		</ul>
 	</nav>
-	<p class="copyright">Copyright © 2022 LG Electronics. All Rights Reserved. 대표번호 : 02-3777-1114</p>
+	<p class="copyright">Copyright © 2022 NCSOFT. All Rights Reserved. 대표번호 : 02-3777-1114</p>
 </div>

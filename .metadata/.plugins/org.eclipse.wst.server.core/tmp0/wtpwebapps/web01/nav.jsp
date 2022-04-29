@@ -1,5 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<!-- 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<!-- 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <% /*
 	스크립트릿(scriptlet) */
 	String[] dp1 = {"WHO WE ARE","WHAT WE CREATE","MEDIA CENTER","INVESTORS","CAREERS"};
@@ -50,14 +56,21 @@
 	<a href="">손님</a>
 	<a href="agree.jsp">회원가입</a>
 <%
-	} else {
+	} else if(!sid.equals("admin")){
 %>
 	<a href="logout.jsp">로그아웃</a>
 	<a href="mypage.jsp"><%=sname %></a>
+	<a href="board.jsp">게시판</a>
 	<a href="">회원탈퇴</a>
+	
 <%
-	}
+	} else {
 %>
 	<a href="">고객센터</a>
 	<a href="memberList.jsp">회원목록</a>
+	<a href="board.jsp">게시판</a>
+	<a href="logout.jsp">로그아웃</a>
+<%
+	}
+%>
 </p>

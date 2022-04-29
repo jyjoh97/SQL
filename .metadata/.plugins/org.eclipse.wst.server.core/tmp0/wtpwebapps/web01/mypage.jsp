@@ -26,7 +26,7 @@
 	
 	try { 
 		Class.forName("org.mariadb.jdbc.Driver");
-		conn = DriverManager.getConnection("jdbc.mariadb://localhost:3308/company", "root", "1234");
+		conn = DriverManager.getConnection("jdbc:mariadb://localhost:3308/company", "root", "1234");
 		String sql = "select * from member where id=?";
 		pstmt = conn.prepareStatement(sql);
 		pstmt.setString(1, sid);
@@ -58,8 +58,15 @@
 					</tr>
 					<tr>
 						<td colspan="2">
-							<input type="submit" value="정보변경"/> &nbsp; &nbsp; &nbsp; &nbsp;
-							<input type="reset" value="취소"/> 
+							<input type="submit" value="정보변경" class="btn btn-primary"/> &nbsp; &nbsp; &nbsp; &nbsp;
+				<%
+					if(!sid.equals("admin")){
+				%>
+							<a href="secession.jsp" class="btn btn-primary">탈퇴</a>&nbsp;
+				<%
+					}
+				%>
+							<input type="reset" value="취소" class="btn btn-primary"/> 
 						</td>
 					</tr>
 				</tbody>
@@ -80,6 +87,9 @@
 	}
 %>
 </div>
+<footer id="ft">
+			<%@ include file="ft.jsp" %>
+		</footer>
 </div>
 </body>
 </html>
