@@ -18,6 +18,7 @@
 		<div class="hd_wrap">
 			<%@ include file="nav.jsp" %>
 		</div>		
+		
 	</header>
 	<div class="content" class="panel_body">
 		<h2>회원가입</h2>
