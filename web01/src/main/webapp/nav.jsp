@@ -46,7 +46,7 @@
 %>
 </ul>	
 </nav>
-<p id="tnd">
+<p id="tnb">
 <%
 	String sid = (String) session.getAttribute("uid");
 	String sname = (String) session.getAttribute("name");

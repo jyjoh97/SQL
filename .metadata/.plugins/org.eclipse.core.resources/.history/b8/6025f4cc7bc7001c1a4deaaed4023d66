@@ -1,7 +1,0 @@
-use company;
-select * from member;
-update member set address='송포동 11' where id='jyjoh9702';
-select * from member;
-select * from board;
-desc board;
-desc * from board;
