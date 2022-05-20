@@ -33,7 +33,16 @@ font-size:14px; }
 <div id="content">
 <table class="tb1">
 	<thead>
-		<tr><th>글번호</th><th>제목</th><th>작성자</th><th>작성일</th><th>조회수</th></tr>
+		<tr>
+			<th>글번호</th>
+			<th>제목</th>
+			<th>작성자</th>
+			<th>작성일</th>
+			<th>조회수</th>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
 	</thead>
 	<tbody>
 <%
@@ -43,10 +52,13 @@ font-size:14px; }
 	
 		<tr>
 			<td><%=vo.getNno() %></td>
-			<td><a href="/web02/GetNoticeListCtrl?nno=<%=vo.getNno() %>"><%=vo.getNtitle() %></a></td>
+			<td><a href="ncontent.jsp?nno=<%=vo.getNno() %>"><%=vo.getNtitle() %></a></td>
 			<td><%=vo.getNname() %></td>
 			<td><%=vo.getResdate() %></td>
 			<td><%=vo.getNcnt() %></td>
+			<td><a href="editNotice.jsp?nno=<%=vo.getNno() %>">수정</a></td>
+			<td><a href="">삭제</a></td>
+			
 		</tr>
 <%
 	}

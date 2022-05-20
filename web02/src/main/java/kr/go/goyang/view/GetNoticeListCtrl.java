@@ -26,7 +26,7 @@ public class GetNoticeListCtrl extends HttpServlet {
     }
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Connection conn = null;
+		Connection conn = null; 
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		String sql = "";

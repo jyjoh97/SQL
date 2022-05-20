@@ -13,20 +13,20 @@
 <head>
 <meta charset="UTF-8">
 <title>관광지 소개</title>
-<style>
-.tb1 { display:table; width:1400px; margin:20px auto; border-collapse: collapse; }
-.tb1 tr { display:table-row; }
-.tb1 th, .tb1 td { display:table-cell; line-height:36px; border-bottom:1px solid #333; text-align: center; 
-font-size:14px; }
-.tb1 th { border-top:1px solid #333; background-color:#ccc; }
-.tb1 td.img_data { max-width:170px; }
-.tb1 td.img_data img { max-width:170px; height:auto; }
-.tb1 td p.coment { max-width:170px; line-height:24px;}
-
-.th5 { width : 500px;}
-
-img { display:block; width:200px; height:200px; margin: auto auto; }
-</style>
+	<style>
+		.tb1 { display:table; width:1400px; margin:20px auto; border-collapse: collapse; }
+		.tb1 tr { display:table-row; }
+		.tb1 th, .tb1 td { display:table-cell; line-height:36px; border-bottom:1px solid #333; text-align: center; 
+		font-size:14px; }
+		.tb1 th { border-top:1px solid #333; background-color:#ccc; }
+		.tb1 td.img_data { max-width:170px; }
+		.tb1 td.img_data img { max-width:170px; height:auto; }
+		.tb1 td p.coment { max-width:170px; line-height:24px;}
+		
+		.th5 { width : 500px;}
+		
+		td img { display:block; width:200px; height:200px; margin: auto auto; }
+	</style>
 </head>
 
 <body>

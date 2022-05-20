@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>web02_02</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- 필터 : 오고 가는 데이터를 필요한 데이터만 추출 또는 변환해줌 -->
+  <!-- Authentication(입증), Data Compression(데이터 압축), Encoding(인코딩), Encryption(암호화)
+  	Image Conversion(이미지 변환), Loggin(접속자 모니터링), MIME-TYPE(멀티미디어 데이터),
+  	Tokenizing(토크나이징) -->
+  <filter>
+  	<filter-name>FilterTest1</filter-name>
+  	<filter-class>com.company.common.FilterTest1</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>FilterTest1</filter-name>
+  	<url-pattern>*</url-pattern>
+  </filter-mapping>
+  
+   <filter>
+  	<filter-name>characterEncoding</filter-name>
+  	<filter-class>com.company.common.characterEncoding</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>characterEncoding</filter-name>
+  	<url-pattern>*</url-pattern>
+  </filter-mapping>
+  
+   <filter>
+  	<filter-name>LogFilter1</filter-name>
+  	<filter-class>com.company.common.LogFilter1</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>LogFilter1</filter-name>
+  	<url-pattern>*</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+  	<filter-name>EncrptFilter</filter-name>
+  	<filter-class>com.company.common.EncrptFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>EncrptFilter</filter-name>
+  	<url-pattern>*</url-pattern>
+  </filter-mapping>
+</web-app>

@@ -40,6 +40,8 @@ create table tourlist(
 -- rid 두 번쨰 구분코드 설명 F = 11:농촌체험, 12:생태체험, 13:환경학습, 14:시티투어, 15:추천코스
 -- rid 두 번쨰 구분코드 설명 G = 11:교통버스, 12:지하철역
 
+
+	
 create table tourlist2(
 
 drop table tourlist;
@@ -95,8 +97,10 @@ create table notice(
     nname varchar(20),
     ncnt number(11));
     
+
+    desc notice;
     
 select * from notice;
     commit;
-select * from impression;
+
 

@@ -35,6 +35,11 @@ font-size:14px; }
 		<table class="tb1">
 			<thead>
 				<tr>
+					<td>
+						<a href="addCustomer.jsp"><button>추가</button></a>
+					</td>
+				</tr>
+				<tr>
 					<th>이름</th>
 					<th>아이디</th>
 					<th>비밀번호</th>
@@ -44,11 +49,12 @@ font-size:14px; }
 					<th>생년월일</th>
 					<th></th>
 				</tr>
+				
 			</thead>
 			<tbody>
 <%
-	for(int i=0;i<ctv.size();i++){
-		CustomerVO vo = ctv.get(i);
+	for(int i=0;i<ctv.size();i++){ 		
+		CustomerVO vo = ctv.get(i);		
 	
 %>
 	
@@ -61,13 +67,13 @@ font-size:14px; }
 					<td><%=vo.getAddress() %></td>
 					<td><%=vo.getBirth() %></td>
 					<td>
-						<a href="editCustomer"><button>수정</button></a>
+						<a href="editCustomer.jsp?eid=<%=vo.getU_id() %>"><button>수정</button></a>
+						<a href="/web02/DeleteCustomerCtrl?u_id=<%=vo.getU_id() %>"><button>삭제</button></a>
 					</td>
 				</tr>
 <%
 	}
-%>
-			
+%>				
 			</tbody>
 		</table>
 		</div>
