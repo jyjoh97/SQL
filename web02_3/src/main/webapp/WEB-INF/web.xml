@@ -9,4 +9,22 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <context-param>
+  	<description>name 전역변수 설정</description>
+  	<param-name>name</param-name>
+  	<param-value>조재영</param-value>
+  </context-param>
+  
+  <context-param>
+  	<description>JDBC 오라클 드라이버</description>
+  	<param-name>ojdbc</param-name>
+  	<param-value>oracle.jdbc.driver.OracleDriver</param-value>
+  </context-param>
+  
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/ErrorFileNotFound.jsp</location>
+  </error-page>
+  
 </web-app>

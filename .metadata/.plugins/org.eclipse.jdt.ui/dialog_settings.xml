@@ -12,15 +12,15 @@
 		<item key="updateSimilarElementsMatchStrategy" value="1"/>
 	</section>
 	<section name="ProblemSeveritiesConfigurationBlock">
-		<item key="expanded2" value="false"/>
-		<item key="expanded1" value="false"/>
-		<item key="expanded4" value="false"/>
-		<item key="expanded3" value="false"/>
-		<item key="expanded6" value="false"/>
-		<item key="expanded5" value="false"/>
-		<item key="expanded8" value="false"/>
-		<item key="expanded7" value="false"/>
 		<item key="expanded0" value="true"/>
+		<item key="expanded1" value="false"/>
+		<item key="expanded2" value="false"/>
+		<item key="expanded3" value="false"/>
+		<item key="expanded4" value="false"/>
+		<item key="expanded5" value="false"/>
+		<item key="expanded6" value="false"/>
+		<item key="expanded7" value="false"/>
+		<item key="expanded8" value="false"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="layout" value="2"/>
@@ -58,9 +58,9 @@
 		<item key="height" value="400"/>
 	</section>
 	<section name="JavaBuildConfigurationBlock">
-		<item key="expanded2" value="false"/>
-		<item key="expanded1" value="false"/>
 		<item key="expanded0" value="true"/>
+		<item key="expanded1" value="false"/>
+		<item key="expanded2" value="false"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.wizards.buildpaths.NewVariableEntryDialog">
 		<item key="DIALOG_WIDTH" value="577"/>

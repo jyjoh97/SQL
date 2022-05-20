@@ -1,0 +1,66 @@
+웹 프로그래밍 언어
+	jsp(->spring), php(->lalavel), asp(->.net), javascript(->react), python(->django), android(->kotlin)
+
+jsp의 프로그래밍
+	- 동적인 페이지의 언어로서 정적인 html, css, javascript, xml, json, 바이너리 파일등을 활용하여
+	웹 서비스를 지속하는 언어이며, 프로그래밍 기술임
+	
+jsp의 기본 구성요소
+	- 디렉티브(Directive) :	<%@ %>	-> jsp 페이지의 설정 정보
+	
+	- 스크립트 : jsp의 기본요소
+		스크립트릿(Scriptlet) : <% %>
+		표현식(Expression) : <%= %>
+		선언부(Declaration) : <%! %>
+	
+	- 표현 언어(Expression Language) :	${코드 }
+	
+	- 기본 객체 : request, response, out, session, application, page, exception
+		request : 클라이언트의 요청 정보 저장
+		response : 응답할 정보 저장
+		session : HTTP 세션(사용권) 정보 저장
+			cookie도 사용궝늘 저장하는 객체이지만, 클라이언트에 접속정보가 남아서 현재는 사용을 하지 않음
+		application : 웹 애플리케이션에 대한 정보를 저장
+		page : jsp 페이지를 구현한 자바 클래스 인스턴스 정보를 저장(jsp + 서블릿 + 컨트롤러 + DAO + VO)
+		pageContext : 현재 jsp 페이지의 정보를 저장
+		exception : 예외처리 및 에러 페이지 정보를 저장하ㅗㄱ 제어
+		out : jsp(웹 문서형식) 코드로 출력하기 위한 출력 스트림 객체
+	
+	- 표준 액션 태그 : 스크립트를 쓰지 않고 html을 혼용할 경우 활용 = <jsp:액션태그명></jsp:액션태그명>
+	
+	- 커스텀 태그 : xml처럼 개발자가 태그를 추가하여 사용 = <커스텀태그></커스텀태그>
+	
+	- 태그 라이브러리 : 태그처럼 쉽게 반복문, 조건문, 특정 객체 생성 등을 활용할 수 있도록 라이브러리 형태로 제공 
+				jstl, fmt, ~
+		
+	- jsp 주석 : 	모든 언어를 각주 처리 할 수 있음 - <%-- --%>
+	
+	
+	
+	
+	
+	
+	
+	- MVC(Model + View + Controller)
+		Level1 : DAO가 없이 각 각 jsp 또는 Controller에서 Model에 접근하여 처리
+		Level2 : DAO가 있어 DAO를 Model로 두고 SQL문과 같은 데이터베이스 처리를 DAO에서 모아서 처리
+		VO(DTO) + View(jsp+jsp파일로 데이터 전송만 하는 서블릿) + Controller(요청한 일을 제어하고 처리)
+		+ Model(데이터를 처리하거나 데이터베이스에 접근하여 요청한 데이터를 가져옴)
+		
+		1. MVC2
+			 요청			파라미터		 VO(DTO)	   VO(DTO)
+		사용자 -> jsp/html -> Controller -> Model(DAO) -> DB(오라클)
+		
+		2. 주요 패키지
+		biz : 해당 기업의 비즈니스에 해당하는 서블릿 또는 클래스
+		service : service만 활용하는 서블릿
+		common : 공통 구현 프로그래밍 주로 vo나 dto, DB연결자,...
+			controller, view, model
+			...ex) com.thejoeun.biz, con.thejoeun.common, com.thejoeun.service,,...
+			
+		3. MVC 구성요소 설명
+		서블릿 : 주로 controller의 역할을 하거나 jsp로 데이터를 보내는 역할을 수행-> 서버 프로그램 구현1
+		jsp : 기본 객체와 기본 구성요소를 활용하여 view의 역할을 수행 -> 서버 프로그램 구현2
+		VO(DTO) : 보내거나 받거나 할 중간 저장 객체 -> 공용객체(공통 모듈 프로그래밍)
+		DAO : SQL문과 같은 데이터베이스 처리를 모아서 처리 -> 배치프로그래밍
+		
